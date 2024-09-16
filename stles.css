@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; 
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: darkblue; 
+    color: white; 
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* Hover effect on nav links */
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #3498db; /* Background color for hero section */
+    color: white; /* White text for hero section */
+}
+
+.hero h1 {
+    font-size: 3.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: skyblue; /* Darker red on hover */
+}
+
+.secondary-btn {
+    background-color: darkblue;
+}
+
+.secondary-btn:hover {
+    background-color: skyblue; /* Darker green on hover */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(100%); /* Invert color for white icons */
+    transition: filter 0.3s ease;
+}
+
+.social-links img:hover {
+    filter: invert(50%); /* Hover effect for social icons */
+}
+
+.about, .skills, .projects, .contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+}
+
+.about h2, .skills h2, .projects h2, .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    margin: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    width: 45%;
+    margin: 10px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .skills ul li {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
